@@ -3,14 +3,106 @@
 :root {
     --lightgray: #E0E0E0;
     --black: #333333;
+    --blue: #2D9CDB;
 }
 
 * {
     margin: 0;
     font-family: Poppins;
+    color: var(--black)
 }
 
-.header {
-    background-color: var(--lightgray);
-    color: var(--black);
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
+
+header {
+    background-color: var(--lightgray);
+}
+
+.site_title {
+    color: var(--black);
+    font-size: 2.25rem;
+    padding-left: 2.188rem;
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.188rem;
+    padding-right: 2.188rem;
+}
+
+.names {
+    color: var(--black);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+}
+
+.container {
+    align-items: flex-start;
+    display: flex;
+}
+
+.subjects {
+    color: var(--black);
+    font-size: 1.875rem;
+}
+
+.left_sidebar {
+    background: #FFFFFF;
+    border: 2px solid var(--lightgray);
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 2.188rem;
+    padding-left: 1.563rem;
+    padding-top: 1.563rem;
+    width: 25vw;
+}
+
+ul {
+    list-style: none;
+    padding-bottom: 9.813rem;
+}
+
+ul li ::before {
+    content: "\2022"; /* 2022 is the unicode code for the bullet*/
+    color: var(--black);
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.subject_num {
+    color: var(--blue);
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.right_sidebar {
+    background: #FFFFFF;
+    border: 2px solid var(--lightgray);
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-left: 4.375rem;
+    margin-right: 2.188rem;
+    padding-left: 1.563rem;
+    padding-right: 1.563rem;
+    padding-top: 1.563rem;
+    width: 75vw;
+}
+
+table, th, td {
+    border: 1px solid var(--lightgray);
+    border-collapse: collapse;
+  }
