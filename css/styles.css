@@ -5,6 +5,7 @@
     --lightgray: #E0E0E0;
     --black: #333333;
     --blue: #2D9CDB;
+    --white: #F2F2F2;
 }
 
 * {
@@ -21,7 +22,7 @@ html {
 }
 
 header {
-    background-color: var(--blue);
+    background: linear-gradient(93.38deg, #2D9CDB 0%, #56CCF2 100%);
 }
 
 span {
@@ -33,7 +34,7 @@ th, td {
 }
 
 .site_title {
-    color: var(--lightgray);
+    color: var(--white);
     font-size: 2rem;
     padding-left: 2.188rem;
     padding-top: 0.8rem;
@@ -69,9 +70,9 @@ th, td {
 
 .left_sidebar {
     background: #FFFFFF;
-    border: 2px solid var(--lightgray);
+    border: 1px solid var(--lightgray);
     box-sizing: border-box;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin-left: 2.188rem;
     padding-left: 1.563rem;
@@ -104,9 +105,9 @@ ul li ::before {
 
 .right_sidebar {
     background: #FFFFFF;
-    border: 2px solid var(--lightgray);
+    border: 1px solid var(--lightgray);
     box-sizing: border-box;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin-bottom: 1rem;
     margin-left: 4.375rem;
@@ -120,4 +121,18 @@ ul li ::before {
 table, th, td {
     border: 1px solid var(--lightgray);
     border-collapse: collapse;
-  }
+}
+
+table {
+    margin-bottom: 1rem;
+}
+
+td > p {
+    padding-top: 0.3rem;
+}
+
+@media screen and (max-width:768px) {
+    container {
+        display: block;
+    }
+}

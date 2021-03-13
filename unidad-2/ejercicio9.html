@@ -9,36 +9,67 @@
 </head>
 <body>
     <!-- https://developer.mozilla.org/es/docs/Web/HTML/Element/form -->
-    <h1>Ingeniería en Sistemas Computacionales</h1>
-    <form action="POST" action="">
-        <p>
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombreInput" autocomplete="off">
-        </p>
-        <p>
-            <label for="apellidos">Apellidos:</label> 
-            <input type="text" name="apellidos" id="apellidosInput" autocomplete="off">
-        </p>
-        <p>
-            <label for="direccion">Dirección:</label> 
-            <input type="text" name="direccion" id="direccionInput" autocomplete="off">
-        </p>
-        <p>
-            <label for="email">E-Mail:</label> 
-            <input type="email" name="email" id="emailInput" autocomplete="off">
-        </p>
-        <p>
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" name="telefono" id="telefonoInput" autocomplete="off">
-        </p>
-        <p>
-            <label for="Sexo">Sexo</label>
-            <p><input type="radio" name="Sexo" id="Hombre"> <label for="Hombre">Hombre</label></p>
-            <p><input type="radio" name="Sexo" id="Mujer"><label for="Mujer">Mujer</label></p>
-        </p>
-        
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Reset">
-    </form>
+    <div class="container">
+        <h1>Ingeniería en Sistemas Computacionales</h1>
+        <form action="POST" action="">
+                <label for="nombre">Nombre</label>
+                <input 
+                    type="text" 
+                    name="nombre" 
+                    id="nombreInput" 
+                    autocomplete="off"
+                    placeholder="Ej. Víctor Hugo"
+                >
+                
+                <label for="apellidos">Apellidos</label> 
+                <input 
+                    type="text" 
+                    name="apellidos" 
+                    id="apellidosInput" 
+                    autocomplete="off"
+                    placeholder="Ej. Vázquez Gómez"
+                >
+                
+                <label for="direccion">Dirección</label> 
+                <input 
+                    type="text" 
+                    name="direccion" 
+                    id="direccionInput" 
+                    autocomplete="off"
+                    placeholder="Calle #55 Colonia"
+                >
+                
+                <label for="email">E-Mail</label> 
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="emailInput" 
+                    autocomplete="off"
+                    placeholder="correo@dominio.com"
+                >
+                
+                <label for="telefono">Teléfono</label>
+                <input 
+                    type="tel" 
+                    name="telefono" 
+                    id="telefonoInput" 
+                    autocomplete="off"
+                    placeholder="17260628"
+                >
+                
+                <label for="Sexo">Sexo</label>
+                <div>
+                    <input type="radio" name="Sexo" id="Hombre" value="Hombre"> 
+                    <label for="Hombre">Hombre</label>
+                </div>
+                <div>
+                    <input type="radio" name="Sexo" id="Mujer" value="Mujer">
+                    <label for="Mujer">Mujer</label>
+                </div>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
 </body>
 </html>
