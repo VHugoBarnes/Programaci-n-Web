@@ -1,0 +1,21 @@
+p {
+    font-weight: bold;
+    font-style: italic;
+    background-color: #2f2;
+}
+
+p.pregunta {
+    font-weight: bold;
+    font-style: italic;
+    background-color: #2f2;
+}
+
+h1 {
+    text-align: center;
+    background-color: #2f2f2f;
+}
+
+.contraste {
+    color: #ffff00;
+    background-color: #000;
+}
