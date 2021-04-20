@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+        
+        //<--;En que anio se publico la especificacion ECMAScript-2015-->
+        //<--Respuesta: En el anio 2015*/--->
+
+
+        let anio = 2015;
+        if (anio==2015) alert ('Fue publicado en el anio 2015');
+
+        if(anio==2015){
+        alert("Tu estas correcto");
+        alert("Has respondido de forma correcta");
+        }
+        if(0){//0 es falso
+        }
+        if(1){// 1 es verdad
+        }
+
+        var edad = 16;
+        if(edad>=18) {
+            alert('Ya eres mayor de edad');
+        } else {
+            alert('Eres menor de edad');
+        }
+
+        let ano = prompt('En que año se publicó el ECMAScript-2015?');
+        if(ano<2015) {
+            alert('Demasiado pronto');
+        } else if (ano > 2015) {
+            alert('Demasiado después');
+        } else {
+            alert('Exacto');
+        }
+
+        let accesoPermitido;
+        let edades = prompt('Cuantos años tienes?');
+
+        if(edades > 18) {
+            accesoPermitido = true;
+        } else {
+            accesoPermitido = false;
+        }
+        alert(accesoPermitido);
+
+        // Ejemplo while
+        let i = 0;
+        while(i<=5) {
+            document.write("Dentro del while, el número es: " + i);
+            document.write("<br>");
+            i = i + 1;
+        }
+
+    </script>
+</body>
+</html>
