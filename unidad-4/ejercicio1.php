@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Ejemplo 1 de php</title>
-	</head>
-	<body>
-		<?php
-			echo "Mi primer ejercicio Unidad 4 PHP";
-		?>
-	</body>
-</html>
+<?php
+    $fp = fopen("text.txt", 'wb');
+
+    for ($j = 0 ; $j < 100 ; ++$j) {
+        $written = fwrite($fp, "Víctor Hugo ");
+        if ($written == FALSE) break;
+    }
+
+    fclose($fp);

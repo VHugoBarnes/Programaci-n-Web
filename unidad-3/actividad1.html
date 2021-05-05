@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #caja {
+            border: 1px solid black;
+            float: right;
+            width: 400px;
+            min-height: 150px;
+        }
+    </style>
+    <script type="text/javascript">
+        function resultados(){
+            texto = document.getElementById('caja');
+            anguloGr = document.form1.angulo.value;
+            anguloGr = Number(anguloGr);
+            rad = (Math.PI/180)*anguloGr;
+
+            if(anguloGr < 0 || anguloGr > 90 || isNaN(anguloGr)) {
+                texto.innerHTML = "No has escrito un número entre 0 y 90";
+            } else {
+                texto.innerHTML = "Angulo en radianes = " + rad + "<br/>";
+                seno = Math.sin(rad);
+                coseno = Math.cos(rad);
+                tangente = Math.tan(rad);
+                texto.innerHTML += "Seno de " + anguloGr + " = " + seno + "<br/>";
+                texto.innerHTML += "Coseno de " + anguloGr + " = " + coseno + "<br/>";
+                texto.innerHTML += "Tangente de " + anguloGr + " = " + tangente + "<br/>";
+            }
+        }
+    </script>
+    <title>Actividad - Calcular Seno y Coseno</title>
+</head>
+<body>
+    <h1>Víctor Hugo Vázquez Gómez</h1>
+    <h2>Razones trigonometricas con Javascript</h2>
+    <h3>Buscar el seno, coseno y tangente de un ángulo</h3>
+
+    <div id="caja"></div>
+
+    <form action="#" name="form1">
+        <p><input type="text" name="angulo" >Valor del ángulo en grados (Entre 0 y 90)</p>
+        <p><input type="button" onclick="resultados()" value="Resultado"></p>
+    </form>
+    
+</body>
+</html>
