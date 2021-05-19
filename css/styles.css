@@ -132,6 +132,10 @@ td > p {
 }
 
 @media only screen and (max-width:600px) {
+
+    .site_title {
+        padding: auto auto;
+    }
     
     .container {
         display: block;
@@ -150,6 +154,11 @@ td > p {
     .right_sidebar {
         width: 90%;
         margin: 0 auto;
+    }
+
+    .temario {
+        padding-left: 0;
+        font-size: 0.8rem;
     }
 
     main {
