@@ -5,7 +5,10 @@
     --lightgray: #E0E0E0;
     --black: #333333;
     --blue: #2D9CDB;
+    --dark-blue: #164d6e;
+    --light-blue: #94c5e0;
     --white: #F2F2F2;
+
 }
 
 * {
@@ -63,9 +66,10 @@ th, td {
 
 .subjects {
     color: var(--black);
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     font-weight: 600;
     padding-bottom: 1rem;
+    padding-left: 1.563rem;
 }
 
 .left_sidebar {
@@ -73,17 +77,11 @@ th, td {
     border: 1px solid var(--lightgray);
     box-sizing: border-box;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    border-radius: 5px;
     margin-left: 2.188rem;
-    padding-left: 1.563rem;
+    /* padding-left: 1.563rem; */
     padding-top: 1.563rem;
     width: 17vw;
-}
-
-ul {
-    list-style: none;
-    /* margin-top: 1rem; */
-    padding-bottom: 9rem;
 }
 
 ul li ::before {
@@ -108,7 +106,7 @@ ul li ::before {
     border: 1px solid var(--lightgray);
     box-sizing: border-box;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 1rem;
     margin-left: 4.375rem;
     margin-right: 2.188rem;
@@ -129,6 +127,43 @@ table {
 
 td > p {
     padding-top: 0.3rem;
+}
+
+.tema-nombre {
+    background: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    padding-left: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background 500ms;
+}
+
+.tema-nombre:hover {
+    background: var(--dark-blue);    
+}
+
+.ejercicios {
+    padding: 0.4rem;
+    background: var(--light-blue);
+}
+
+.ejercicios > li {
+    list-style: none;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    border-bottom: 1px solid var(--dark-blue);
+}
+
+.ejercicios > li > a {
+    text-decoration: none;
+}
+
+.ejercicios > li > a::before {
+    content: none;
+}
+
+.hidde {
+    display: none;
 }
 
 @media only screen and (max-width:600px) {

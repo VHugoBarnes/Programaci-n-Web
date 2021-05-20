@@ -1,9 +1,8 @@
 <?php
-    $fp = fopen("text.txt", 'wb');
-
-    for ($j = 0 ; $j < 100 ; ++$j) {
-        $written = fwrite($fp, "Víctor Hugo ");
-        if ($written == FALSE) break;
-    }
-
-    fclose($fp);
+$count = 1;
+while ($count <= 12)
+{
+echo "$count times 12 is " . $count * 12 . "<br>";
+++$count;
+}
+?>
